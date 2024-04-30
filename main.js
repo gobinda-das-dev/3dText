@@ -8,7 +8,7 @@ import * as dat from 'dat.gui';
 const gui = new dat.GUI();
 
 const textureLoader = new THREE.TextureLoader();
-const matcap1 = textureLoader.load('./public/matcaps/11.png');
+const matcap1 = textureLoader.load('matcaps/11.png');
 
 
 
@@ -39,7 +39,7 @@ const fontLoader = new FontLoader();
 
 fontLoader.load(
 	// 'https://threejs.org/examples/fonts/helvetiker_regular.typeface.json',
-	'./public/Kanit Light_Regular.json',
+	'Kanit Light_Regular.json',
 	// './public/Gilroy Light_Regular.json',
 	font => {
 		const textGeometry = new TextGeometry(
